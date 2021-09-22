@@ -1,0 +1,9 @@
+<view class="title">{{day_now}}</view>
+<view class="title">{{minute_now}}</view>
+<image src="./1.JPG"></image>
+<view class="name">姓名:    尹健</view>
+<view class="identification">身份证号:  430525199308074934</view>
+<view class="lookup_time">查询时间: 09-22 20:30</view>
+<view class="invalid_time">失效时间: 09-22 24:00</view>
+<view class="return_home">返回首页</view>
+<view class="bj_center">北京大数据中心</view>
