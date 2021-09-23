@@ -1,9 +1,36 @@
-<view class="title">{{day_now}}</view>
-<view class="title">{{minute_now}}</view>
-<image src="./1.JPG"></image>
-<view class="name">姓名:    尹健</view>
-<view class="identification">身份证号:  430525199308074934</view>
-<view class="lookup_time">查询时间: 09-22 20:30</view>
-<view class="invalid_time">失效时间: 09-22 24:00</view>
-<view class="return_home">返回首页</view>
-<view class="bj_center">北京大数据中心</view>
+<view class="main_block">
+    <view class="title">
+        <image class="logo" mode="widthFix" src="../../img/logo.jpg"/>
+        <text class="day">{{day_now}}\n{{minute_now}}</text>
+        <image class="r_logo" mode="widthFix" src="../../img/qr.png"/>
+    </view>
+    <view class="photo_container">
+        <image class="photo" mode="widthFix" src="../../img/1.jpg"></image>
+    </view>
+    <view class="status-group">
+        <icon class="icon-status" type="success" size="40"></icon>
+        <text class="status">未见异常</text>
+    </view>
+    <view class="name-group">
+        <text class="name" space="nbsp">姓      名: </text>
+        <view class="my-name">{{my_name}}</view>
+    </view>
+    <view class="id-group">
+        <text class="id" space="nbsp">身份证号: </text>
+        <text class="my-id" space="nbsp">{{my_id}}</text>
+    </view>
+    <view class="lookup-group">
+        <view class="lookup">查询时间: </view>
+        <view class="my-lookup">{{lookup_time}}</view>
+    </view>
+    <view class="invalid-group">
+        <view class="invalid">失效时间: </view>
+        <view class="my-invalid">{{invalid_time}}</view>
+    </view>
+
+</view>
+
+<view class="home">
+    <button class="button_home">返回首页</button>
+</view>
+<view class="bj_center">北京市大数据中心</view>

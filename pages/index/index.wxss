@@ -1,7 +1,124 @@
 Page {
+  /* text-align: center; */
+}
+
+
+.title {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_block {
+  margin: 30px; 
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 5px grey;
+}
+
+.logo {
+  position: relative;
+  width: 35px;
+  top: 10px;
+  left: 10px;
+}
+
+.r_logo {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  top: 10px;
+  right: 10px;
+}
+
+.day, .minute {
+  text-align: center;
+  color: #6a6a6a;
+}
+
+.photo_container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.status-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  text-align: center;
+  /* color: #52f13c; */
+  /* color: #25ec1e; */
+  color: #07c160;
+  font-size:x-large;
+}
+
+.name-group {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  color: #9a9a9a;
+}
+.id-group {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.id {
+  color: #9a9a9a;
+}
+.lookup-group {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.lookup {
+  color: #9a9a9a;
+}
+.invalid-group {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.invalid {
+  color: #9a9a9a;
+}
+.my-invalid {
+  color: red;
+}
+
+.home {
+  /* margin: 0 auto; */
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+  background-color: #317FFF;
+}
+
+.button_home {
+  margin: 30px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #317FFF;
   text-align: center;
 }
 
-.title {
-    color: burlywood;
+.bj_center {
+  text-align: center;
+  color: #cdcdcd;
+  font-size: small;
 }

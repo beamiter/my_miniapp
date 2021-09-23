@@ -1,14 +1,13 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "健康宝",
-    "navigationBarTextStyle":"white"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#317FFF",
+        "navigationBarTitleText": "健康宝",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
