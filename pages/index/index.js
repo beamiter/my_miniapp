@@ -25,11 +25,9 @@ Page({
             })
         }, 1000)
 
-        this.top = []
-        this.bottom = []
-        this.left = []
-        this.right = []
+        this.vec1d = []
         this.v = 5
+        this.radius = 3
         this.clock = 0
 
         // 通过 SelectorQuery 获取 Canvas 节点
@@ -45,8 +43,6 @@ Page({
     init(res) {
         const width = res[0].width
         const height = res[0].height
-        this.width = width
-        this.height = height
         const canvas = res[0].node
         const dpr = wx.getSystemInfoSync().pixelRatio
         canvas.width = width * dpr
@@ -54,15 +50,15 @@ Page({
         const ctx = canvas.getContext('2d')
         ctx.scale(dpr, dpr)
 
-        const number = 12
-        const offset = 3
-        const x_gap = height / number
-        const y_gap = width / number
+        this.width = width - 2 * this.radius
+        this.height = height - 2 * this.radius
+
+        const number = 48
+        const gap = (this.width + this.height) * 2 / number
+        // console.log(number, gap, this.width, this.height)
         for (var i = 0; i < number; ++i) {
-            this.left.push(x_gap * i + offset)
-            this.right.push(x_gap * i + offset)
-            this.top.push(y_gap * i + offset)
-            this.bottom.push(y_gap * i + offset)
+            this.vec1d.push(gap * i)
+            // console.log(gap * i)
         }
 
         const renderLoop = () => {
@@ -83,7 +79,7 @@ Page({
         if (this.clock) {
             return
         }
-        ctx.clearRect(0, 0, this.width, this.height)
+        ctx.clearRect(0, 0, this.width + 50, this.height + 50)
         this.drawMarquee(ctx)
         this.drawEgo(ctx)
     },
@@ -97,39 +93,36 @@ Page({
             ctx.fill()
             ctx.stroke()
         }
-        const radius = 3
-        const offset = 5
-        const left = this.left
-        const right = this.right
-        const height_len = left.length
-        for (var i = 0; i < height_len; ++i) {
-            if (this.inRange(left[i], offset, this.height - offset)) {
-                ball(left[i], radius, radius)
+
+        function toCoord(dim1, width, height) {
+            const mile0 = 2 * (width + height)
+            const mile1 = 2 * width + height
+            const mile2 = width + height
+            const mile3 = width
+            if (dim1 >= mile0) {
+                return toCoord(dim1 - mile0, width, height)
             }
-            if (this.inRange(right[i], offset, this.height - offset)) {
-                ball(right[i], this.width - radius, radius)
+            if (dim1 > mile1) {
+                return [mile0 - dim1, 0]
             }
-            left[i] = (left[i] + this.v) % this.height
-            right[i] = (right[i] - this.v + this.height) % this.height
+            if (dim1 > mile2) {
+                return [height, mile1 - dim1]
+            }
+            if (dim1 > mile3) {
+                return [dim1 - mile3, width]
+            }
+            return [0, dim1]
         }
 
-        const top = this.top
-        const bottom = this.bottom
-        const width_len = top.length
-        for (var i = 0; i < width_len; ++i) {
-            if (this.inRange(top[i], offset, this.width - offset)) {
-                ball(radius, top[i], radius)
-            }
-            if (this.inRange(bottom[i], offset, this.width - offset)) {
-                ball(this.height - radius, bottom[i], radius)
-            }
-            bottom[i] = (bottom[i] + this.v) % this.width
-            top[i] = (top[i] - this.v + this.width) % this.width
+        const vec1d = this.vec1d
+        const dim1_len = vec1d.length
+        const perimeter = 2 * (this.width + this.height)
+        for (var i = 0; i < dim1_len; ++i) {
+            const coord = toCoord(vec1d[i], this.width, this.height)
+            // console.log(i, vec1d[i], coord[0], coord[1], perimeter)
+            ball(coord[0] + this.radius, coord[1] + this.radius, this.radius)
+            vec1d[i] = (vec1d[i] + this.v) % perimeter
         }
-    },
-
-    inRange(x, a, b) {
-        return x > a && x < b
     },
 
     drawEgo(ctx) {
