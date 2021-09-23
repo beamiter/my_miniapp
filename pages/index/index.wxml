@@ -1,3 +1,6 @@
+<view class="all-block">
+<image class='bg' mode="widthFix" src='../../img/bg.png'>
+</image>
 <view class="main-block">
     <view class="title">
         <image class="logo" mode="widthFix" src="../../img/logo.jpg"/>
@@ -32,4 +35,7 @@
 <view class="home">
     <button class="button-home">返回首页</button>
 </view>
+
 <view class="bj-center">北京市大数据中心</view>
+
+</view>

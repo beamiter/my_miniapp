@@ -1,7 +1,21 @@
 Page {
   background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
 }
 
+.all-block {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .title {
   padding: 5px;
@@ -10,12 +24,13 @@ Page {
 }
 
 .main-block {
-  margin-top: 30px; 
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0 0 5px grey;
+  margin-top: 20px; 
+  margin-left: 5%;
+  position: absolute;
+  width: 90%;
+  border-radius: 8px;
+  /* box-shadow: 0 0 5px grey; */
+  background-color: white;
 }
 
 .logo {
@@ -110,17 +125,16 @@ Page {
 }
 
 .home {
-  /* margin: 0 auto; */
   margin-right: 20px;
   margin-left: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px grey;
   background-color: #317FFF;
+  top: 515px;
+  position: relative;
 }
 
 .button-home {
-  margin-top: 20px;
-  margin-bottom: 15px;
   color: white;
   background-color: #317FFF;
   text-align: center;
@@ -130,4 +144,7 @@ Page {
   text-align: center;
   color: #cdcdcd;
   font-size: small;
+  top: 510px;
+  position: relative;
+  margin-top: 15px;
 }
