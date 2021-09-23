@@ -10,7 +10,7 @@ Page {
 }
 
 .main-block {
-  margin: 30px; 
+  margin-top: 30px; 
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
@@ -35,17 +35,13 @@ Page {
 }
 
 .day {
+  padding-top: 10px;
   text-align: center;
   color: #6a6a6a;
 }
 
-.photo-group {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .canvas-group {
+  margin-top: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -66,7 +62,10 @@ Page {
 }
 
 .name-group {
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -74,7 +73,10 @@ Page {
   color: #9a9a9a;
 }
 .id-group {
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -82,7 +84,10 @@ Page {
   color: #9a9a9a;
 }
 .lookup-group {
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -90,7 +95,10 @@ Page {
   color: #9a9a9a;
 }
 .invalid-group {
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -111,8 +119,8 @@ Page {
 }
 
 .button-home {
-  margin: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: white;
   background-color: #317FFF;
   text-align: center;

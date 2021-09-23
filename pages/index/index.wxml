@@ -5,7 +5,7 @@
         <image class="r-logo" mode="widthFix" src="../../img/qr.png"/>
     </view>
     <view class="canvas-group">
-        <canvas class="my-canvas" type="2d" id="canvas" style="width: 240px; height: 240px"/>
+        <canvas class="my-canvas" type="2d" id="canvas" style="width: 210px; height: 210px"/>
     </view>
     <view class="status-group">
         <icon class="icon-status" type="success" size="40"></icon>

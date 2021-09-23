@@ -127,7 +127,7 @@ Page({
 
     drawEgo(ctx) {
         if (!this._img) return
-        ctx.drawImage(this._img, 15, 15, 210, 210)
+        ctx.drawImage(this._img, 15, 15, 180, 180)
         ctx.restore()
     }
 })
