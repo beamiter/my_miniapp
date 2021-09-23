@@ -1,11 +1,11 @@
-<view class="main_block">
+<view class="main-block">
     <view class="title">
         <image class="logo" mode="widthFix" src="../../img/logo.jpg"/>
         <text class="day">{{day_now}}\n{{minute_now}}</text>
-        <image class="r_logo" mode="widthFix" src="../../img/qr.png"/>
+        <image class="r-logo" mode="widthFix" src="../../img/qr.png"/>
     </view>
-    <view class="photo_container">
-        <image class="photo" mode="widthFix" src="../../img/1.jpg"></image>
+    <view class="canvas-group">
+        <canvas class="my-canvas" type="2d" id="canvas" style="width: 240px; height: 240px"/>
     </view>
     <view class="status-group">
         <icon class="icon-status" type="success" size="40"></icon>
@@ -27,10 +27,9 @@
         <view class="invalid">失效时间: </view>
         <view class="my-invalid">{{invalid_time}}</view>
     </view>
-
 </view>
 
 <view class="home">
-    <button class="button_home">返回首页</button>
+    <button class="button-home">返回首页</button>
 </view>
-<view class="bj_center">北京市大数据中心</view>
+<view class="bj-center">北京市大数据中心</view>

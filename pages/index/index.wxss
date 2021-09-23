@@ -1,5 +1,5 @@
 Page {
-  /* text-align: center; */
+  background-color: #f1f1f1;
 }
 
 
@@ -9,7 +9,7 @@ Page {
   justify-content: space-between;
 }
 
-.main_block {
+.main-block {
   margin: 30px; 
   margin-left: 20px;
   margin-right: 20px;
@@ -25,28 +25,30 @@ Page {
   left: 10px;
 }
 
-.r_logo {
+.r-logo {
   position: relative;
   height: 35px;
   width: 35px;
   top: 10px;
   right: 10px;
+  opacity: 0.8;
 }
 
-.day, .minute {
+.day {
   text-align: center;
   color: #6a6a6a;
 }
 
-.photo_container {
+.photo-group {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.photo {
-  width: 360rpx;
-  height: 360rpx;
+.canvas-group {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .status-group {
@@ -54,18 +56,17 @@ Page {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .status {
   text-align: center;
-  /* color: #52f13c; */
-  /* color: #25ec1e; */
   color: #07c160;
   font-size:x-large;
 }
 
 .name-group {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -73,7 +74,7 @@ Page {
   color: #9a9a9a;
 }
 .id-group {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -81,7 +82,7 @@ Page {
   color: #9a9a9a;
 }
 .lookup-group {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -89,7 +90,7 @@ Page {
   color: #9a9a9a;
 }
 .invalid-group {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -109,7 +110,7 @@ Page {
   background-color: #317FFF;
 }
 
-.button_home {
+.button-home {
   margin: 30px;
   margin-bottom: 20px;
   color: white;
@@ -117,7 +118,7 @@ Page {
   text-align: center;
 }
 
-.bj_center {
+.bj-center {
   text-align: center;
   color: #cdcdcd;
   font-size: small;
