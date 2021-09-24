@@ -1,4 +1,4 @@
-const app = getApp()
+// const app = getApp()
 
 import util from "../../utils/util.js";
 
@@ -75,7 +75,7 @@ Page({
     },
 
     render(canvas, ctx) {
-        this.clock = (this.clock + 1) % 5
+        this.clock = (this.clock + 1) % 20
         if (this.clock) {
             return
         }

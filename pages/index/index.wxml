@@ -5,7 +5,7 @@
     <view class="title">
         <image class="logo" mode="widthFix" src="../../img/logo.jpg"/>
         <text class="day">{{day_now}}\n{{minute_now}}</text>
-        <image class="r-logo" mode="widthFix" src="../../img/qr.png"/>
+        <image class="r-logo" mode="widthFix" src="../../img/qr0.png"/>
     </view>
     <view class="canvas-group">
         <canvas class="my-canvas" type="2d" id="canvas" style="width: 210px; height: 210px"/>
@@ -13,6 +13,7 @@
     <view class="status-group">
         <icon class="icon-status" type="success" size="40"></icon>
         <text class="status">未见异常</text>
+        <image class="question" mode="widthFix" src="../../img/question.png"/>
     </view>
     <view class="name-group">
         <text class="name" space="nbsp">姓      名: </text>

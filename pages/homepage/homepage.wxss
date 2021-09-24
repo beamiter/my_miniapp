@@ -1,0 +1,73 @@
+/* pages/homepage/homepage.wxss */
+Page {
+  background-color: #f1f1f1;
+}
+
+.bg-group {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+}
+
+.info-check {
+    position: relative;
+    text-align: center;
+    font-size: 23px;
+    padding-left: 10px;
+    top: 230px;
+    border: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    opacity: 0;
+}
+
+.title {
+    padding-left: 60px;
+    height: 80px;
+    line-height: 80px;
+    text-align: justify;
+    font-size: large;
+    font-weight: 530;
+}
+
+.sc-view-box {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.logo {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  left: 15px;
+}
+.sc-view-box0 {
+    display: flex;
+    flex-direction: row;
+}
+.sc-view-item0 {
+    margin-left: 20px;
+}
+
+.sc-view-box0, .sc-view-box1, .sc-view-box2, .sc-view-box3,
+.sc-view-box4, .sc-view-box5, .sc-view-box6, .sc-view-box7 {
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.sc-view-item0, .sc-view-item1, .sc-view-item2, .sc-view-item3,
+.sc-view-item4, .sc-view-item5, .sc-view-item6, .sc-view-item7 {
+    height: 83px;
+    line-height: 83px;
+    text-align: center;
+    font-size:x-large;
+    font-weight:550;
+}

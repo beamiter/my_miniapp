@@ -1,0 +1,38 @@
+<!--pages/homepage/homepage.wxml-->
+<!-- <text>pages/homepage/homepage.wxml</text> -->
+
+<view class="bg-group">
+    <image class="bg" mode="widthFix" src="../../img/home.png"/>
+    <button class="info-check" bindtap="click" style="width: 360px; height: 60px;">本人健康码自查询</button>
+    <!-- <view class="info">
+    </view> -->
+</view>
+
+<!-- <view class="title">健康宝更新了，请注意一下变</view>
+<scroll-view class="sc-view-group" scroll-y>
+    <view class="sc-view-box0">
+        <image class="logo" mode="widthFix" src="../../img/logo.jpg"/>
+        <view class="sc-view-item0">{{navi[0]}}</view>
+    </view>
+    <view class="sc-view-box1">
+        <view class="sc-view-item1">{{navi[1]}}</view>
+    </view>
+    <view class="sc-view-box2">
+        <view class="sc-view-item2">{{navi[2]}}</view>
+    </view>
+    <view class="sc-view-box3">
+        <view class="sc-view-item3">{{navi[3]}}</view>
+    </view>
+    <view class="sc-view-box4">
+        <view class="sc-view-item4">{{navi[4]}}</view>
+    </view>
+    <view class="sc-view-box5">
+        <view class="sc-view-item5">{{navi[5]}}</view>
+    </view>
+    <view class="sc-view-box6">
+        <view class="sc-view-item6">{{navi[6]}}</view>
+    </view>
+    <view class="sc-view-box7">
+        <view class="sc-view-item7" space="nbsp">京  心  相  助</view>
+    </view>
+</scroll-view> -->
